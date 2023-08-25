@@ -1,0 +1,18 @@
+#test {
+  max-width: 4rem;
+  margin-right: 2rem;
+}
+
+#test {
+  width: 100%;
+  height: 100%;
+  margin-right: 2rem;
+  max-width: 4rem;
+}
+
+#test {
+  background-color: #05e8ba;
+  background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
+  margin-bottom: 2rem;
+  min-height: 8rem;
+}
