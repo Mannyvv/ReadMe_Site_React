@@ -10,7 +10,10 @@ h3,
 h1 {
   font-family: "Caveat Brush", sans-serif;
   color: black;
+  
 }
+
+
 
 .card-title {
   font-weight: 500;
@@ -20,6 +23,8 @@ h1 {
 h2 {
   
   color: black;
+  
+  
 }
 
 .card-img-overlay .card-title {
@@ -27,55 +32,61 @@ h2 {
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-.row-content {
+.row-content { 
   padding: 50px 0;
   border-bottom: 1px ridge;
   min-height: 200px;
 }
 
 .site-footer {
-  background-image: linear-gradient(#cec8ff, white);
+  background-color: #05e8ba;
+  background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);  
   padding: 20px 0;
   margin-top: 2rem;
 }
 
-.Headercomp2 {
+.headerNavBrand {
   max-width: 4rem;
   margin-right: 2rem;
 }
 
-.Headercomp2 {
+.headerNavBrand{
   width: 100%;
   height: 100%;
   margin-right: 2rem;
   max-width: 4rem;
+  
 }
 
 
 
-img {
-  width: 150%;
-  height: 100%;
+.logo {
+  width: 50%;
+  height: 50%;
   margin-right: 2rem;
   max-width: 10rem;
+  
 }
 
-.Headercomp {
+.headerNavBar {
   background-color: #05e8ba;
-  background-image: linear-gradient(315deg, #05e8ba 0%, #087ee1 74%);
-  margin-bottom: 2rem;
+  background-image: linear-gradient(270deg, #05e8ba 0%, #087ee1 74%);
   min-height: 8rem;
+  margin-bottom: -25px;
 }
 
-#test2 {
-  background-color: yellow;
 
+
+.navbarComp{
+  background-color: #05e8ba;
+  background-image: linear-gradient(270deg, #05e8ba 0%, #087ee1 74%);
+  
+  margin-bottom: 20px;
+  
 }
 
-#test1 {
-  background-color: yellow;
 
-}
+
 .page-enter {
   opacity: 0;
   transform: translateX(-100%);
@@ -94,4 +105,44 @@ img {
 .page-exit-active {
   opacity: 0;
   transition: 300ms ease-in;
+}
+
+.link{
+  color: white;
+}
+
+
+
+.imageGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px; /* Adjust this value to control the spacing */
+  
+}
+
+.imageContainer {
+  overflow: hidden;
+  border-radius: 15px; /* Adjust the radius as needed */
+}
+
+.image {
+  width: 100%;
+  height: auto;
+}
+
+
+
+.col-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Vertically center the content */
+  align-items: center; /* Horizontally center the content */
+}
+
+.RowContenth5{
+  font-family: "Caveat Brush", sans-serif;
+  color: black;
+  font-size: 100px;
+  text-align: center;
+
 }

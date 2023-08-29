@@ -13,6 +13,7 @@ services:
       - "5432:5432"
     volumes:
       - postgres_data:/var/lib/postgresql/data
+      - ./users.sql:/docker-entrypoint-initdb.d/users.sql 
 
   pgadmin:
     container_name: pgadmin_container
@@ -32,7 +33,7 @@ services:
 
 volumes:
   postgres_data:
-    driver: local  # Specify the volume driver for PostgreSQL data
+    driver: local  
   pgadmin_data:
 
 networks:
