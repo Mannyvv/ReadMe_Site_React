@@ -146,3 +146,30 @@ h2 {
   text-align: center;
 
 }
+
+.search-container {
+  display: flex;
+  align-items: right;
+  justify-content: flex-end; 
+}
+
+
+.SearchInput{
+  border-width: 4px;
+  border-radius: 10px;
+}
+
+.SearchInputButton {
+  display: flex;
+  gap: 10px; 
+  align-items: center;
+}
+
+.book-card {
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1); 
+}
+
+.book-card:hover {
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 1); 
+}

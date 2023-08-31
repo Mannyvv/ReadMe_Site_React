@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer className="site-footer">
             <Container>
-                <Row>
+                <Row style={{justifyContent:'center'}}>
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
                         <h5>Links</h5>
                     <ul className="list-unstyled">
@@ -14,10 +14,10 @@ const Footer = () => {
                             <Link className="link" to="/">Home</Link>
                         </li>
                         <li>
-                            <Link className="link" to="/directory">Directory</Link>
+                            <Link className="link" to="/directory">Books</Link>
                         </li>
                         <li>
-                            <Link className="link" to="/about">About</Link>
+                            <Link className="link" to="/about">About Us</Link>
                         </li>
                         <li>
                             <Link className="link" to="/contact">contact</Link>

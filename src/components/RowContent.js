@@ -6,19 +6,11 @@ const RowContent = () => {
   return (
     <Container className="row-content">
       <Row>
-        <Col sm="8" md="6" className="imageGrid">
+        <Col className="d-none d-md-block" sm="8" md="6">
           <div className="imageContainer">
             <img src={student} alt="Image 1" className="image" />
           </div>
-          <div className="imageContainer">
-            <img src={student} alt="Image 2" className="image" />
-          </div>
-          <div className="imageContainer">
-            <img src={student} alt="Image 3" className="image" />
-          </div>
-          <div className="imageContainer">
-            <img src={student} alt="Image 4" className="image" />
-          </div>
+          
         </Col>
         <Col sm="8" md="6" className="col-content">
           <h5 className="RowContenth5" >Welcome to ReadMe</h5>
