@@ -28,6 +28,9 @@ const usersSlice = createSlice({
     },
     setLoggedUserData: (state, action) => {
         state.loggedUserData = action.payload
+    },
+    clearLoggedUserData: (state, action) => {
+       state.loggedUserData = {}
     }
   },
   extraReducers: {
