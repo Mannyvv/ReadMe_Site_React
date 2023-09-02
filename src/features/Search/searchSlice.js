@@ -18,7 +18,7 @@ export const fetchBooks = createAsyncThunk(
 //states to store in redux
 const initialState = {
     searchTerm: '',
-    searchData: [],
+    searchData: null,
     isLoading: true,
     errMsg:''
 }

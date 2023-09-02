@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Card, Row, CardBody, CardImg, CardTitle, CardSubtitle, Button } from "reactstrap";
 import Loading from "../../components/Loading";
 import Error from "../../components/Error";
@@ -7,16 +7,9 @@ import NoImageFoundJpg from '../../app/assets/img/noImg.jpg'
 
 const BookCard = ({ book }) => {
 
-    const [readMoreState, toggleReadMore] = useState(false);
     const [showFullDescription, setShowFullDescription] = useState(false);
 
-    const handleReadMore = () => {
-        toggleReadMore(!readMoreState);
-        console.log(readMoreState)
-    }
 
-    
-    
 
     const toggleDescription = () => {
         setShowFullDescription(!showFullDescription);
@@ -43,7 +36,6 @@ const BookCard = ({ book }) => {
     // Shorten Description: Wanted to add "More" button to reveal rest of description
 
     const description_1 = bookInfo.description.slice(0, 150);
-    let description = description_1
     const description_2 = bookInfo.description.slice(151,400);
     // Check for thumbnail image : True -> Using Image, False -> Use "image not available png"
     const thumbnailUrl = bookInfo.imageLinks ? bookInfo.imageLinks.smallThumbnail : NoImageFoundJpg;
@@ -78,11 +70,11 @@ const BookCard = ({ book }) => {
                     </CardSubtitle>
                     <CardSubtitle>
                         <b>By: </b>
-                        {authors.map((author, index) => (
+                        {authors?authors.map((author, index) => (
                             <a key={index} className="text-info" href={`https://www.google.com/search?q=${author}`}>
                                 {author}
                             </a>
-                        ))}
+                        )):'N/A'}
                     </CardSubtitle>
                     <CardSubtitle>
                         <b>Languages:</b> {languages}

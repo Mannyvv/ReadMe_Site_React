@@ -4,10 +4,15 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import SearchInput from "./SearchInput";
 import NewsLetterSignUpForm from "../features/NewsLetter/NewsLetterSignUpForm";
+import { useSelector } from "react-redux";
 
 const NavbarComp = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  
+  const [profileNavItem, setNavItem] = useState('none')
+  // const userLoggedIn = useSelector((state) => state.users.userLoggedIn)
+  //  if(userLoggedIn){
+  //   setNavItem('display')
+  //  }
     return (
       <>
         <Navbar dark className="navbarComp" sticky="top" expand="md">
@@ -24,11 +29,11 @@ const NavbarComp = () => {
                   <i className="fa fa-users fa-sm" /> About
                 </NavLink>
               </NavItem>
-              {/* <NavItem>
-                <NavLink className="nav-link" to="/BooksPage">
-                  <i className="fa fa-book fa-sm" /> Books
+              <NavItem style={{display:profileNavItem}}>
+                <NavLink  className="nav-link" to="/ProfilePage">
+                  <i className="fa fa-book fa-sm" /> Profile
                 </NavLink>
-              </NavItem> */}
+              </NavItem>
 
               <NewsLetterSignUpForm/>
 
