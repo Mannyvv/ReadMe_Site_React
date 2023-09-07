@@ -1,46 +1,47 @@
-# Getting Started with Create React App and Redux
+# ReadMe.com - Portfolio Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
+## 1. Introduction
 
-## Available Scripts
+ReadMe aims to connect parents who want to find, borrow, purchase, or trade books for their children to read, creating a community that promotes a love for reading, cooperation, and equity. By leveraging technology and the collective resources of parents, ReadMe provides a convenient and affordable solution for accessing a wide variety of resources and children's books.
 
-In the project directory, you can run:
+### Problems:
+- Limited access to diverse children's books for parents, particularly those in underserved communities.
+- Difficulty finding suitable books for children within their age range, cultural backgrounds, and diverse interests.
+- High costs associated with purchasing new books, creating an affordability barrier for many families.
+- Unequal access to resources and opportunities for children from marginalized communities.
 
-### `npm start`
+### Goals:
+- Promote equitable access to a wide variety of children's books for all parents, regardless of their socio-economic status or geographical location.
+- Ensure representation and inclusivity by providing a diverse collection of books that reflect different cultures, languages, and experiences.
+- Reduce financial barriers by facilitating borrowing, purchasing, and trading of books, making reading materials more affordable for all families.
+- Bridge the digital divide by offering an accessible and user-friendly platform that accommodates different devices and internet connectivity levels.
+- Empower parents from marginalized communities to actively participate in their children's reading journey and foster a love for reading.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Value:
+- Create a level playing field by providing equitable access to diverse children's books, helping to close the literacy gap.
+- The site offers a wide range of books that represent different cultures, languages, and perspectives, promoting understanding and empathy.
+- By enabling borrowing, purchasing, and trading, ReadMe reduces financial barriers and ensures access to books for families with limited resources.
+- ReadMe encourages parents from all backgrounds to actively engage in their children's reading development, fostering a sense of community and shared learning.
+- By providing access to a rich collection of books, ReadMe empowers children from underserved communities to explore new worlds and expand their knowledge.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 2. What the MVP of your Project will Look Like
 
-### `npm test`
+The minimal viable product would be a web application that allows parents to create accounts, search for children's books based on age range, and genre. It would include a user-friendly interface for browsing and discovering books and a profile management system for users to add books to their personal libraries.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 3. Prioritized List of Extra Features
 
-### `npm run build`
+- Connect with other parents in their district or school for borrowing, purchasing, or trading books.
+- Communication feature to facilitate book exchanges between parents.
+- Purchase books from 3rd party locations (e.g., Amazon, Target, etc).
+- School or District to upload their required reading lists or access to school library database.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 4. Market Survey
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Similar sites to ReadMe all have capabilities to search for books by age, genre, or topic but are not community or school district based, are only in English, and require purchasing books from their site.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 5. References
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- [BOOK RIOT - Book Recommendations and Reviews](https://bookriot.com/)
+- [Scholastic for Parents: Children's Books, Activities, Printables & More](https://www.scholastic.com/parents/home.html)
+- [BookTrust: Getting children reading | BookTrust](https://www.booktrust.org.uk/)
+- [Imagination Soup | Children's Books & Learning Activities](https://imaginationsoup.net/)
