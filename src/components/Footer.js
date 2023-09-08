@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer = () => {
     return (
         <footer className="site-footer">
-            <Container>
+            <Container sticky="bottom">
                 <Row style={{justifyContent:'center'}}>
                     <Col xs={{ size: 4, offset: 1 }} sm='2'>
                         <h5>Links</h5>
@@ -14,13 +14,13 @@ const Footer = () => {
                             <Link className="link" to="/">Home</Link>
                         </li>
                         <li>
-                            <Link className="link" to="/directory">Books</Link>
+                            <Link className="link" to="/ProfilePage">Profile</Link>
                         </li>
                         <li>
-                            <Link className="link" to="/about">About Us</Link>
+                            <Link className="link" to="/AboutUsPage">About</Link>
                         </li>
                         <li>
-                            <Link className="link" to="/contact">contact</Link>
+                            <Link className="link" to="/ContactPage">Contact</Link>
                         </li>
                     </ul>
                     </Col>
@@ -64,7 +64,7 @@ const Footer = () => {
                             href='mailto:notreal@notreal.co'
                             style={{color:"white"}}
                         >
-                            <i className='fa fa-envelope-o ' /> campsites@nucamp.co
+                            <i className='fa fa-envelope-o ' /> reading@rainbow.com
                         </a></Col>
                 </Row>
             </Container>

@@ -27,7 +27,7 @@ const BookCard = ({ book }) => {
         title = `${bookInfo.title.slice(0, 60)}...`;
     }
     const authors = bookInfo.authors;
-    // Check for average rating : True - Rating and Star, False - N/A
+    // Check for average rating : True=Rating and Star : False=N/A
     const averageRating = bookInfo.averageRating ? `${bookInfo.averageRating}` : "N/A";
     // Change en to English string
     if (bookInfo.language === "en") {
@@ -37,7 +37,7 @@ const BookCard = ({ book }) => {
 
     const description_1 = bookInfo.description.slice(0, 150);
     const description_2 = bookInfo.description.slice(151,400);
-    // Check for thumbnail image : True -> Using Image, False -> Use "image not available png"
+    // Check for thumbnail image : True=Using Image, False=Use "image not available png"
     const thumbnailUrl = bookInfo.imageLinks ? bookInfo.imageLinks.smallThumbnail : NoImageFoundJpg;
     const fullDescription = description_1 + description_2
     if (isLoading) {

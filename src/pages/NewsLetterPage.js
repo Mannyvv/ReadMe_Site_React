@@ -1,14 +1,7 @@
 import { Container, Row } from "reactstrap";
 import SubHeader from "../components/SubHeader";
-import RowContent from "../components/RowContent";
-import RowContentOpp from "../components/RowContentOpp";
-import student from "../app/assets/img/studentReading.jpg";
-
-
 
 const NewsLetterPage = () => {
-
-
 
     return (
         <>
@@ -26,7 +19,7 @@ const NewsLetterPage = () => {
                     </h1>
                 </Row>
                 <Row>
-                    <iframe width="560" height="560" src="https://www.youtube.com/embed/zVsG6uzxW5c?si=R13ZQtE_osm9GlrZ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <iframe width="560" height="560" src="https://www.youtube.com/embed/zVsG6uzxW5c?si=R13ZQtE_osm9GlrZ" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowFullscreen></iframe>
                 </Row>
             </Container >
         </>

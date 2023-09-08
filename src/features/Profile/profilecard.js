@@ -5,14 +5,8 @@ import { Dispatch } from 'react';
 import { useDispatch } from 'react-redux';
 import { clearLoggedUserData } from '../User/usersSlice';
 const ProfileCard = ({ user }) => {
-    const navigate = useNavigate();
-    const dispatch = useDispatch();
+   
 
-    function logOut(){
-        dispatch(clearLoggedUserData({}))
-        navigate(`/`)
-    
-    }
     return (
         <Container>
 
@@ -43,7 +37,7 @@ const ProfileCard = ({ user }) => {
                     </ul>
 
                 </CardFooter>
-                <Button onClick={logOut}>Log Out</Button>
+                
                 
             </Card>
         </Container>

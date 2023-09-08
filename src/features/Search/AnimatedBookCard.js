@@ -12,7 +12,6 @@ const AnimatedBookCard = ({ book }) => {
   });
 
   useEffect(() => {
-    // Set toggle to true to trigger the animation when the component is mounted
     setToggle(true);
   }, []);
 

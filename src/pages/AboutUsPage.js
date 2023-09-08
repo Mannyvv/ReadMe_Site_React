@@ -15,6 +15,7 @@ const AboutUs = () => {
         <Container>
             <SubHeader current='About Us' />
             <RowContentOpp blurb={blurb} />
+            <RowContent />
         </Container>
     )
 }

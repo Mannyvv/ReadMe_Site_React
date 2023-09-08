@@ -24,16 +24,16 @@ function App() {
     <div className="App">
       <Header />
       <NavbarComp />
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='ContactPage' element={<ContactPage/>}/>
-        <Route path='AboutUs' element={<AboutUsPage/>}/>
-        <Route path='NewsLetter/PastNewsLetter' element={<NewsLetterPage/>}/>
-        <Route path='SearchPage' element={<SearchPage />} />
-        <Route path='SearchPage/:searchTerm' element={<SearchPage/>} />
-        <Route path='ProfilePage' element={<ProfilePage/>}/>
-        <Route path='ProfilePage/:userName' element={<ProfilePage/>}/>
-      </Routes>
+        <Routes>
+            <Route path='/' element={<HomePage />} />
+            <Route path='ContactPage' element={<ContactPage />} />
+            <Route path='AboutUs' element={<AboutUsPage />} />
+            <Route path='NewsLetter/PastNewsLetter' element={<NewsLetterPage />} />
+            <Route path='SearchPage' element={<SearchPage />} />
+            <Route path='SearchPage/:searchTerm' element={<SearchPage />} />
+            <Route path='ProfilePage' element={<ProfilePage />} />
+            <Route path='ProfilePage/:userName' element={<ProfilePage />} />
+        </Routes>
       <Footer />
     </div>
   );

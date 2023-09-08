@@ -1,18 +1,15 @@
 import React from "react";
-import { Navbar, Nav, NavItem, NavbarToggler, Collapse, Dropdown, DropdownToggle, DropdownMenu, DropdownItem } from "reactstrap"
+import { Navbar, Nav, NavItem, NavbarToggler, Collapse } from "reactstrap"
 import { NavLink } from "react-router-dom";
 import { useState } from "react";
 import SearchInput from "./SearchInput";
 import NewsLetterSignUpForm from "../features/NewsLetter/NewsLetterSignUpForm";
-import { useSelector } from "react-redux";
+
 
 const NavbarComp = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const [profileNavItem, setNavItem] = useState('none')
-  // const userLoggedIn = useSelector((state) => state.users.userLoggedIn)
-  //  if(userLoggedIn){
-  //   setNavItem('display')
-  //  }
+  // const [profileNavItem, setNavItem] = useState('none')
+ 
     return (
       <>
         <Navbar dark className="navbarComp" sticky="top" expand="md">
@@ -29,11 +26,11 @@ const NavbarComp = () => {
                   <i className="fa fa-users fa-sm" /> About
                 </NavLink>
               </NavItem>
-              <NavItem style={{display:profileNavItem}}>
+              {/* <NavItem style={{display:profileNavItem}}>
                 <NavLink  className="nav-link" to="/ProfilePage">
                   <i className="fa fa-book fa-sm" /> Profile
                 </NavLink>
-              </NavItem>
+              </NavItem> */}
 
               <NewsLetterSignUpForm/>
 

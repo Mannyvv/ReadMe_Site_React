@@ -1,16 +1,29 @@
 import { Button, Label, Col, FormGroup } from "reactstrap";
 import { Formik, Field, Form, ErrorMessage } from "formik";
 import { validateContactForm } from "../utils/validateContactForm";
+import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import { postFeedbackForm } from "../features/Feedback/feedbackSlice";
 
 
 
 const ContactForm = () => {
+    const [contactFormInfo, setContactFormInfo] = useState("")
+    const dispatch = useDispatch()
 
     const handleSubmit = (values, { resetForm }) => {
         console.log('form values:', values);
         console.log('in JSON format:', JSON.stringify(values));
+        setContactFormInfo(values)
         resetForm();
     };
+
+    useEffect(() => {
+        if (contactFormInfo) {
+            console.log("contactform info")
+          dispatch(postFeedbackForm(contactFormInfo));
+        }
+      }, [contactFormInfo]);
 
 const formatPhoneNumber = (e) =>{
         if(e.target.value >= 3) {
