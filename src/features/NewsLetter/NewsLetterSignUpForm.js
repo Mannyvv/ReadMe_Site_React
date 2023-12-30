@@ -40,7 +40,7 @@ const NewsLetterSignUpForm = () => {
             <a onClick={() => setSignUpModalOpen(true)}>Sign-Up</a>
           </DropdownItem>
           <DropdownItem>
-            <a style={{ color: 'black' }} href="/Newsletter/PastNewsLetter">Past News Letter</a>
+            <a style={{ color: 'black' }} href="/NewsLetter/PastNewsLetter">Past News Letter</a>
           </DropdownItem>
         </DropdownMenu>
       </Dropdown>
