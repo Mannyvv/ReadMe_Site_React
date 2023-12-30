@@ -7,8 +7,6 @@ import UserLoginForm from "../features/User/userLoginForm";
 import { useSelector } from "react-redux";
 import { useNavigate } from "react-router-dom";
 
-
-
 const HomePage = () => {
     const navigate = useNavigate()
 
@@ -17,8 +15,6 @@ const HomePage = () => {
     }
     const blurb = " Connect with like-minded parents, exchange recommendations, and enhance your child's reading journey."
     const userLoggedIn = useSelector((state) => state.users.userLoggedIn)
-
-
     return (
         <>
             <Container>
